@@ -24,4 +24,9 @@ class triange(shape):
         self.height = height
 
 circle = circle(color = "red",filled = "yes", radius = 5)
+
+square = square(color = "blue", filled = "no",width = 5 )
 print(circle.color)
+print(circle.filled)
+print(f"{circle.radius}")
+print(f"{square.width}")
