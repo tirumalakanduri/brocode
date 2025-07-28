@@ -7,17 +7,23 @@ class shape():
         self.color = color
         self.filled = filled
 
+    def describe(self):
+        print(f"It is {self.color} and {'filled' if self.filled else 'not_filled'}")
+
 class circle(shape):
     def __init__(self, color, filled, radius):
         super().__init__(color, filled)
         self.radius = radius
+
+    def describe(self):
+        print(f"it is a circle with an area of {3.14 }")
 
 class square(shape):
        def __init__(self, color, filled, width):
         super().__init__(color, filled)
         self.width = width
 
-class triange(shape):
+class triangle(shape):
     def __init__(self, color, filled, width, height):
         super().__init__(color, filled)
         self.width = width

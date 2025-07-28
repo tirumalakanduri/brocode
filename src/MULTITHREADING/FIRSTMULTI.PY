@@ -30,7 +30,7 @@ chore2.start()
 chore3 = threading.Thread(target = get_mail)
 chore3.start()
 
-chore1.join()
+chore1.join()    #we write the join because inorder to print out methods first and at the end the print statement should be printed.
 chore2.join()
 chore3.join()
 
